@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
@@ -87,4 +88,11 @@ Route::middleware('auth')->group(function() {
 
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+});
+
+Route::get('/clear-all', function() {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    return 'Application has been cleared';
 });
