@@ -42,6 +42,10 @@ Route::middleware('auth')->group(function() {
         return view('home');
     })->name('home');
 
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
     Route::middleware('standard:1')->group(function () {
         Route::get('/1', function () {
             return view('1');

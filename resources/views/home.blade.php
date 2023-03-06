@@ -65,7 +65,7 @@
                     <h4>التحسين والتطوير</h4>
                 </a>
 
-                <a href="#" class="btn btn-lg btn-secondary">
+                <a href="{{ route('dashboard') }}" class="btn btn-lg btn-secondary">
                     <h4>لوحة المعلومات</h4>
                 </a>
 
