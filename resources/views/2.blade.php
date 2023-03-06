@@ -51,7 +51,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تحديد القيم المؤسسية ونشر ثقافة التميّز بما يعبر عن قيم التميز، والإنجاز، والعمل بروح
@@ -63,7 +63,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق برامج ومبادرات لترسيخ الثقافة المؤسسية بين الموظفين ودعم الصورة الإيجابية للموظفين</td>
@@ -73,7 +73,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نشر وتعزيز ثقافة إدارة التغيير والابتكار وإدارة المعرفة والتعلم المؤسسي</td>
@@ -83,7 +83,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق برامج ومبادرات لتمكين وتأهيل الموظفين للمواقع القيادية وبناء نماذج قيادية تكون قدوة
@@ -94,7 +94,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="12">نتائج الثقافة المؤسسية</td>
@@ -106,7 +106,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات ترسيخ الثقافة المؤسسية</td>
@@ -116,7 +116,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى التزام الموظفين بالقيم المؤسسية</td>
@@ -126,7 +126,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات تأهيل الموظفين للمواقع القيادية</td>
@@ -136,7 +136,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات عن مستوى دمج النوع الاجتماعي</td>
@@ -146,7 +146,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات توفير بيئة ممكنة في العمل</td>
@@ -156,7 +156,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="6">مقاييس الرأي</td>
@@ -167,7 +167,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• ترسيخ الثقافة المؤسسية</td>
@@ -177,7 +177,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى التزام القيادة في وزارة الشباب بالقيم المؤسسية</td>
@@ -187,7 +187,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى التزام الموظفين بالقيم المؤسسية</td>
@@ -197,7 +197,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى أداء الفريق القيادي وتأهيل الصف الثاني</td>
@@ -207,7 +207,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى توفير بيئة ممكنة في العمل</td>
@@ -217,7 +217,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <th rowspan="16">الاتصال واشراك المعنيين</th>
@@ -231,7 +231,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• إيجاد وتفعيل قنوات إتصال حديثة وفعالة ومباشرة ومنتظمة ممتنوعة مع جميع المعنيين</td>
@@ -241,7 +241,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطوير خطة الإتصال المؤسسي وخطة الاتصال في الطوارئ والأزمات</td>
@@ -251,7 +251,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نشر الروح الايجابية بتطوير خطة لترويج الانجازات على مستوى وزارة الشباب</td>
@@ -261,7 +261,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطوير قنوات لتقديم الشكاوى والإقتراحات من قبل المعنيين</td>
@@ -271,7 +271,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• إستخدام مواقع التواصل الاجتماعي في وزارة الشباب</td>
@@ -281,7 +281,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="10">نتائج الاتصال واشراك المعنيين</td>
@@ -293,7 +293,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات أدوات الإتصال الداخلية والخارجية</td>
@@ -303,7 +303,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات الترويج الفعال لإنجازات الجهات</td>
@@ -313,7 +313,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات التواصل مع كافة المعنيين</td>
@@ -323,7 +323,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات تفاعل وزارة الشباب مع المواطنين</td>
@@ -333,7 +333,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام قنوات التواصل الاجتماعي</td>
@@ -343,7 +343,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[28]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="4">مقاييس الرأي</td>
@@ -354,7 +354,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[29]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• قياس رأي المعنيين على الشكاوى والإقتراحات المقدمة</td>
@@ -364,7 +364,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[30]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• فعّالية التواصل الداخلي والخارجي</td>
@@ -374,7 +374,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[31]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• جدوى استخدام قنوات التواصل الاجتماعي</td>
@@ -384,7 +384,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[32]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <th rowspan="21">الحوكمة وادارة الأداء</th>
@@ -397,7 +397,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[33]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق معايير النزاهة الوطنية والشفافية في القطاع العام وفق الدليل الوطني المعتمد للحوكمة</td>
@@ -407,7 +407,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[34]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• الالتزام بمتطلبات أجهزة المتابعة والرقابة الإدارية والمالية الحكومية</td>
@@ -417,7 +417,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[35]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام الانظمة التقنية في حوكمة اجراءات وزارة الشباب</td>
@@ -427,7 +427,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[36]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق مدونة السلوك الوظيفي الحكومي ومعايير اخلاقيات العمل المهني</td>
@@ -437,7 +437,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[37]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق نظام إدارة الأداء المؤسسي وتحديد المسؤوليات والصلاحيات لتطبيقه</td>
@@ -447,7 +447,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[38]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تصميم آليات وأنظمة لجمع وتحليل والتدقيق على بيانات الأداء ورفع التقارير للمعنيين بدورية منتظمة
@@ -458,7 +458,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[39]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• متابعة جمع بيانات مؤشرات الأداء التي يتم على أساسها قياس أداء وزارة الشباب</td>
@@ -468,7 +468,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[40]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام تقارير نظام إدارة الأداء المؤسسي في المراجعة الدورية للاستراتيجيات والمؤشرات</td>
@@ -478,7 +478,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[41]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• التنسيق مع رئاسة الوزراء بخصوص رصد الأداء المؤسسي ومشاركة المعلومات اللازمة مع الجهات المعنية
@@ -489,7 +489,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[42]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="11">نتائج الحوكمة وادارة الأداء</td>
@@ -501,7 +501,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[43]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج تطبيق نظام الحوكمة</td>
@@ -511,7 +511,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[44]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج نشاطات التوعية والتعاميم حول الحوكمة</td>
@@ -521,7 +521,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[45]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نسبة الالتزام بمدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
@@ -531,7 +531,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[46]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• فعالية المساءلة والمحاسبة</td>
@@ -541,7 +541,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[47]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج كفاءة وفعالية نظام إدارة الأداء المؤسسي (دقة جمع وتحليل والتدقيق على بيانات الأداء ورفع
@@ -552,7 +552,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[48]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج استخدام تقارير نظام إدارة الأداء المؤسسي في التطوير والتحسين</td>
@@ -562,7 +562,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[49]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى التنسيق مع رئاسة الوزراء بخصوص إدارة الأداء المؤسسي</td>
@@ -572,7 +572,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[50]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج الاستفادة من تقارير المشاركة بجوائز التميز</td>
@@ -582,7 +582,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[51]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="2">مقاييس الرأي</td>
@@ -593,7 +593,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[52]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى توفير وزارة الشباب ومشاركتها للمعلومات اللازمة حول الأداء المؤسسي (منهم رئاسة الوزراء)
@@ -604,7 +604,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[53]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
             </tbody>
         </table>

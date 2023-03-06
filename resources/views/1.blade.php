@@ -54,7 +54,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى مواءمة التوجهات والأهداف ومؤشرات الأداء الاستراتيجية للجهة الحكومية مع الرؤى الوطنية
@@ -66,7 +66,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• التنسيق والمشاركة الفاعلة مع كافة الجهات المساهمة بتحقيق مؤشرات الأداء الاستراتيجية الوطنية
@@ -77,7 +77,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="3">نتائج القدرات الوطنية</td>
@@ -89,7 +89,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج تقييم فاعلية الأهداف والمبادرات والمشاريع والبرامج وفقا للمؤشرات الاستراتيجية الوطنية
@@ -100,7 +100,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>مقاييس الرأي</td>
@@ -111,7 +111,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <th rowspan="6">الدور القطاعي</th>
@@ -125,7 +125,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مواءمة التوجهات والأهداف ومؤشرات الأداء الاستراتيجية للجهة الحكومية مع الأهداف الاستراتيجية
@@ -136,7 +136,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• التنسيق والمشاركة الفاعلة مع كافة الجهات المساهمة بتحقيق مؤشرات الأداء الاستراتيجية القطاعية
@@ -147,7 +147,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="3">نتائج الدور القطاعي</td>
@@ -159,7 +159,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج مؤشرات أداء تقييم فاعلية الأهداف والمبادرات والمشاريع والبرامج وفقا للمؤشرات
@@ -170,7 +170,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>مقاييس الرأي</td>
@@ -181,7 +181,7 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
             </tbody>
         </table>

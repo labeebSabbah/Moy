@@ -51,7 +51,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تحديد وتصنيف العمليات اللازمة واستخدام أساليب مناسبة لإدارتها وتطويرها</td>
@@ -61,7 +63,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تحديد مسؤولي العمليات وتوضيح أدوارهم ومسؤولياتهم في إدارة العمليات الرئيسية</td>
@@ -71,7 +75,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تصميم وقياس مؤشرات أداء العمليات</td>
@@ -81,7 +87,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• معالجة الموضوعات المتعلقة بالازدواجية والتداخل فيما يتعلق بالعمليات المشتركة مع جهات اخرى</td>
@@ -91,7 +99,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق مبادرات لتطوير العمليات</td>
@@ -101,7 +111,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td rowspan="5">نتائج ادارة العمليات</td>
@@ -113,7 +125,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• الإنتاجية</td>
@@ -123,7 +137,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• كفاءة تنفيذ العمليات</td>
@@ -133,7 +149,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• الازدواجية والتداخل فيما يتعلق بالعمليات المشتركة</td>
@@ -143,7 +161,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطوير العمليات</td>
@@ -153,7 +173,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <th rowspan="22">تقديم الخدمات</th>
@@ -166,7 +188,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تصميم وتقديم خدمات ذات قيمة مضافة وباستخدام حلول مبتكرة وتلبي الاحتياجات الحالية والمستقبلية
@@ -177,7 +201,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تصميم وقياس مؤشرات أداء للخدمات</td>
@@ -187,7 +213,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق مبادرات للتحسين والتطوير على الخدمات ذات الأولوية ورسم رحلة تجربة متلقي الخدمة</td>
@@ -197,7 +225,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطوير آليات وقنوات مبتكرة في تقديم الخدمات المشتركة والعمل مع الشركاء المعنيين</td>
@@ -207,7 +237,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطوير وتطبيق اتفاقيات مستوى الخدمة داخل وزارة الشباب وخارجها</td>
@@ -217,7 +249,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تفعيل قنوات التوعية والاتصال والتواصل مع متلقي الخدمة</td>
@@ -227,7 +261,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق نظام لإدارة العلاقة مع متلقي الخدمة (المقترحات والشكاوى)</td>
@@ -237,7 +273,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td rowspan="14">نتائج تقديم الخدمات</td>
@@ -249,7 +287,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• كفاءة وفاعلية تقديم الخدمات</td>
@@ -259,7 +299,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• توفر الخدمات</td>
@@ -269,7 +311,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• سهولة الوصول للخدمات</td>
@@ -279,7 +323,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطوير الخدمات</td>
@@ -289,7 +335,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• القيمة المضافة لمتلقي الخدمة</td>
@@ -299,7 +347,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• التوعية في مجال الخدمات</td>
@@ -309,7 +359,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• التعامل مع الشكاوى/المقترحات المقدمة فيما يتعلق بالعمليات والخدمات</td>
@@ -319,7 +371,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td rowspan="6">مقاييس الرأي</td>
@@ -330,7 +384,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• السمعة والصورة الذهنية</td>
@@ -340,7 +396,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[28]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• التواصل والإشراك والتوعية لمتلقي الخدمة</td>
@@ -350,7 +408,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[29]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• تطوير الخدمات</td>
@@ -360,7 +420,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[30]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• مستوى الالتزام بجودة الخدمات</td>
@@ -370,7 +432,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[31]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
                 <tr>
                     <td>• الابتكار في الخدمات</td>
@@ -380,7 +444,9 @@
                         </div>
                     </td>
                     <td><button class="btn btn-success">مشاهدة</button></td>
-                    <td><button class="btn btn-success"><i class="fa-solid fa-paperclip"></i></button></td>
+                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[32]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a></td>
                 </tr>
             </tbody>
         </table>

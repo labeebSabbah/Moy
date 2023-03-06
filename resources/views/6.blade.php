@@ -55,9 +55,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -73,9 +73,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -91,9 +91,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -109,9 +109,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -128,9 +128,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -146,9 +146,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -164,9 +164,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -182,9 +182,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -202,9 +202,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -220,9 +220,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -238,9 +238,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -256,9 +256,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -274,9 +274,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -292,9 +292,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -313,9 +313,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -333,9 +333,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -351,9 +351,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -369,9 +369,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -387,9 +387,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -407,9 +407,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -425,9 +425,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -443,9 +443,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -461,9 +461,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -480,9 +480,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -498,9 +498,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -516,9 +516,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -534,9 +534,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -552,9 +552,9 @@
                     <button class="btn btn-success">مشاهدة</button>
                 </td>
                 <td>
-                    <button class="btn btn-success">
-                        <i class="fa-solid fa-paperclip"></i>
-                    </button>
+                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}">
+                        <i class="fa-solid fa-paperclip"></i>    
+                    </a>
                 </td>
             </tr>
         </table>

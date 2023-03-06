@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
+use App\Http\Controllers\AttachmentController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
 /*
@@ -87,6 +88,10 @@ Route::middleware('auth')->group(function() {
             return view('7');
         });
     });
+
+    Route::post('/attachments', [AttachmentController::class, 'store'])->name('attachments.store');
+
+    Route::get('/attachments/{task}', [AttachmentController::class, 'index'])->name('attachments.index');
 
     Route::put('/task/update', [TaskController::class, 'update'])->name('task.update');
 
