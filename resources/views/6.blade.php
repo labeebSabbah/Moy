@@ -50,7 +50,7 @@
                     <input onchange="change({{ $t[0]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[0]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[0]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[0]->percentage == 100) bg-success @endif @if ($t[0]->percentage < 50) bg-danger @endif" style="width: {{ $t[0]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -68,7 +68,7 @@
                     <input onchange="change({{ $t[1]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[1]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[1]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[1]->percentage == 100) bg-success @endif @if ($t[1]->percentage < 50) bg-danger @endif" style="width: {{ $t[1]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -86,7 +86,7 @@
                     <input onchange="change({{ $t[2]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[2]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[2]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[2]->percentage == 100) bg-success @endif @if ($t[2]->percentage < 50) bg-danger @endif" style="width: {{ $t[2]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -104,7 +104,7 @@
                     <input onchange="change({{ $t[3]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[3]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[3]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[3]->percentage == 100) bg-success @endif @if ($t[3]->percentage < 50) bg-danger @endif" style="width: {{ $t[3]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -123,7 +123,7 @@
                     <input onchange="change({{ $t[4]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[4]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[4]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[4]->percentage == 100) bg-success @endif @if ($t[4]->percentage < 50) bg-danger @endif" style="width: {{ $t[4]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -141,7 +141,7 @@
                     <input onchange="change({{ $t[5]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[5]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[5]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[5]->percentage == 100) bg-success @endif @if ($t[5]->percentage < 50) bg-danger @endif" style="width: {{ $t[5]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -159,7 +159,7 @@
                     <input onchange="change({{ $t[6]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[6]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[6]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[6]->percentage == 100) bg-success @endif @if ($t[6]->percentage < 50) bg-danger @endif" style="width: {{ $t[6]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -177,7 +177,7 @@
                     <input onchange="change({{ $t[7]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[7]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[7]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[7]->percentage == 100) bg-success @endif @if ($t[7]->percentage < 50) bg-danger @endif" style="width: {{ $t[7]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -197,7 +197,7 @@
                     <input onchange="change({{ $t[8]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[8]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[8]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[8]->percentage == 100) bg-success @endif @if ($t[8]->percentage < 50) bg-danger @endif" style="width: {{ $t[8]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -215,7 +215,7 @@
                     <input onchange="change({{ $t[9]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[9]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[9]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[9]->percentage == 100) bg-success @endif @if ($t[9]->percentage < 50) bg-danger @endif" style="width: {{ $t[9]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -233,7 +233,7 @@
                     <input onchange="change({{ $t[10]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[10]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[10]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[10]->percentage == 100) bg-success @endif @if ($t[10]->percentage < 50) bg-danger @endif" style="width: {{ $t[10]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -251,7 +251,7 @@
                     <input onchange="change({{ $t[11]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[11]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[11]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[11]->percentage == 100) bg-success @endif @if ($t[11]->percentage < 50) bg-danger @endif" style="width: {{ $t[11]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -269,7 +269,7 @@
                     <input onchange="change({{ $t[12]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[12]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[12]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[12]->percentage == 100) bg-success @endif @if ($t[12]->percentage < 50) bg-danger @endif" style="width: {{ $t[12]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -287,7 +287,7 @@
                     <input onchange="change({{ $t[13]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[13]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[13]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[13]->percentage == 100) bg-success @endif @if ($t[13]->percentage < 50) bg-danger @endif" style="width: {{ $t[13]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -308,7 +308,7 @@
                     <input onchange="change({{ $t[14]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[14]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[14]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[14]->percentage == 100) bg-success @endif @if ($t[14]->percentage < 50) bg-danger @endif" style="width: {{ $t[14]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -328,7 +328,7 @@
                     <input onchange="change({{ $t[15]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[15]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[15]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[15]->percentage == 100) bg-success @endif @if ($t[15]->percentage < 50) bg-danger @endif" style="width: {{ $t[15]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -346,7 +346,7 @@
                     <input onchange="change({{ $t[16]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[16]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[16]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[16]->percentage == 100) bg-success @endif @if ($t[16]->percentage < 50) bg-danger @endif" style="width: {{ $t[16]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -364,7 +364,7 @@
                     <input onchange="change({{ $t[17]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[17]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[17]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[17]->percentage == 100) bg-success @endif @if ($t[17]->percentage < 50) bg-danger @endif" style="width: {{ $t[17]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -382,7 +382,7 @@
                     <input onchange="change({{ $t[18]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[18]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[18]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[18]->percentage == 100) bg-success @endif @if ($t[18]->percentage < 50) bg-danger @endif" style="width: {{ $t[18]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -402,7 +402,7 @@
                     <input onchange="change({{ $t[19]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[19]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[19]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[19]->percentage == 100) bg-success @endif @if ($t[19]->percentage < 50) bg-danger @endif" style="width: {{ $t[19]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -420,7 +420,7 @@
                     <input onchange="change({{ $t[20]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[20]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[20]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[20]->percentage == 100) bg-success @endif @if ($t[20]->percentage < 50) bg-danger @endif" style="width: {{ $t[20]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -438,7 +438,7 @@
                     <input onchange="change({{ $t[21]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[21]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[21]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[21]->percentage == 100) bg-success @endif @if ($t[21]->percentage < 50) bg-danger @endif" style="width: {{ $t[21]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -456,7 +456,7 @@
                     <input onchange="change({{ $t[22]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[22]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[22]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[22]->percentage == 100) bg-success @endif @if ($t[22]->percentage < 50) bg-danger @endif" style="width: {{ $t[22]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -475,7 +475,7 @@
                     <input onchange="change({{ $t[23]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[23]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[23]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[23]->percentage == 100) bg-success @endif @if ($t[23]->percentage < 50) bg-danger @endif" style="width: {{ $t[23]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -493,7 +493,7 @@
                     <input onchange="change({{ $t[24]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[24]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[24]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[24]->percentage == 100) bg-success @endif @if ($t[24]->percentage < 50) bg-danger @endif" style="width: {{ $t[24]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -511,7 +511,7 @@
                     <input onchange="change({{ $t[25]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[25]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[25]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[25]->percentage == 100) bg-success @endif @if ($t[25]->percentage < 50) bg-danger @endif" style="width: {{ $t[25]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -529,7 +529,7 @@
                     <input onchange="change({{ $t[26]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[26]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[26]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[26]->percentage == 100) bg-success @endif @if ($t[26]->percentage < 50) bg-danger @endif" style="width: {{ $t[26]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>
@@ -547,7 +547,7 @@
                     <input onchange="change({{ $t[27]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[27]->percentage }}%">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: {{ $t[27]->percentage }}%"></div>
+                        <div class="progress-bar @if ($t[27]->percentage == 100) bg-success @endif @if ($t[27]->percentage < 50) bg-danger @endif" style="width: {{ $t[27]->percentage }}%"></div>
                     </div>
                 </td>
                 <td>

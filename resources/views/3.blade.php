@@ -51,7 +51,7 @@
                         والاتجاهات العالمية ذات العلاقة</td>
                     <td><input onchange="change({{ $t[0]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[0]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[0]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[0]->percentage == 100) bg-success @endif @if ($t[0]->percentage < 50) bg-danger @endif" style="width: {{ $t[0]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">مشاهدة</a></td>
@@ -61,7 +61,7 @@
                     <td>• مواءمة التوجهات والأهداف ومؤشرات الأداء الاستراتيجية للوزارة مع القدرات المؤسسية الداخلية</td>
                     <td><input onchange="change({{ $t[1]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[1]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[1]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[1]->percentage == 100) bg-success @endif @if ($t[1]->percentage < 50) bg-danger @endif" style="width: {{ $t[1]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">مشاهدة</a></td>
@@ -71,7 +71,7 @@
                     <td>• صياغة الأهداف والتوجهات الاستراتيجية بما يحقق رؤية و رسالة وزارة الشباب</td>
                     <td><input onchange="change({{ $t[2]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[2]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[2]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[2]->percentage == 100) bg-success @endif @if ($t[2]->percentage < 50) bg-danger @endif" style="width: {{ $t[2]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">مشاهدة</a></td>
@@ -81,7 +81,7 @@
                     <td>• إعداد ومراجعة الاستراتيجية والسياسات الداعمة لها</td>
                     <td><input onchange="change({{ $t[3]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[3]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[3]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[3]->percentage == 100) bg-success @endif @if ($t[3]->percentage < 50) bg-danger @endif" style="width: {{ $t[3]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">مشاهدة</a></td>
@@ -92,7 +92,7 @@
                         للوزارة والمنفعة المتبادلة</td>
                     <td><input onchange="change({{ $t[4]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[4]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[4]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[4]->percentage == 100) bg-success @endif @if ($t[4]->percentage < 50) bg-danger @endif" style="width: {{ $t[4]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">مشاهدة</a></td>
@@ -102,7 +102,7 @@
                     <td>• التنسيق مع الشركاء الاستراتيجيين في وضع وتحقيق الأهداف الاستراتيجية المشتركة</td>
                     <td><input onchange="change({{ $t[5]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[5]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[5]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[5]->percentage == 100) bg-success @endif @if ($t[5]->percentage < 50) bg-danger @endif" style="width: {{ $t[5]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">مشاهدة</a></td>
@@ -113,7 +113,7 @@
                         الاستراتيجية</td>
                     <td><input onchange="change({{ $t[6]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[6]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[6]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[6]->percentage == 100) bg-success @endif @if ($t[6]->percentage < 50) bg-danger @endif" style="width: {{ $t[6]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">مشاهدة</a></td>
@@ -123,7 +123,7 @@
                     <td>• سلسلة ومواءمة الأهداف الاستراتيجية على جميع المستويات داخل وزارة الشباب</td>
                     <td><input onchange="change({{ $t[7]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[7]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[7]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[7]->percentage == 100) bg-success @endif @if ($t[7]->percentage < 50) bg-danger @endif" style="width: {{ $t[7]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">مشاهدة</a></td>
@@ -134,7 +134,7 @@
                     </td>
                     <td><input onchange="change({{ $t[8]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[8]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[8]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[8]->percentage == 100) bg-success @endif @if ($t[8]->percentage < 50) bg-danger @endif" style="width: {{ $t[8]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">مشاهدة</a></td>
@@ -145,7 +145,7 @@
                         الخطة الاستراتيجية</td>
                     <td><input onchange="change({{ $t[9]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[9]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[9]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[9]->percentage == 100) bg-success @endif @if ($t[9]->percentage < 50) bg-danger @endif" style="width: {{ $t[9]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">مشاهدة</a></td>
@@ -157,7 +157,7 @@
                     <td>• نتائج مؤشرات المهام الرئيسية للوزارة</td>
                     <td><input onchange="change({{ $t[10]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[10]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[10]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[10]->percentage == 100) bg-success @endif @if ($t[10]->percentage < 50) bg-danger @endif" style="width: {{ $t[10]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">مشاهدة</a></td>
@@ -167,7 +167,7 @@
                     <td>• نتائج مؤشرات تحقيق الأهداف الاستراتيجية</td>
                     <td><input onchange="change({{ $t[11]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[11]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[11]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[11]->percentage == 100) bg-success @endif @if ($t[11]->percentage < 50) bg-danger @endif" style="width: {{ $t[11]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">مشاهدة</a></td>
@@ -177,7 +177,7 @@
                     <td>• نتائج الرشاقة في التعامل/سرعة الاستجابة للمتغيرات الداخلية والخارجية</td>
                     <td><input onchange="change({{ $t[12]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[12]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[12]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[12]->percentage == 100) bg-success @endif @if ($t[12]->percentage < 50) bg-danger @endif" style="width: {{ $t[12]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">مشاهدة</a></td>
@@ -187,7 +187,7 @@
                     <td>• نتائج متعلقة في استشراف المستقبل</td>
                     <td><input onchange="change({{ $t[13]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[13]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[13]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[13]->percentage == 100) bg-success @endif @if ($t[13]->percentage < 50) bg-danger @endif" style="width: {{ $t[13]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">مشاهدة</a></td>
@@ -197,7 +197,7 @@
                     <td>• نتائج توفير مصادر الدعم المالي من غير الموازنة</td>
                     <td><input onchange="change({{ $t[14]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[14]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[14]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[14]->percentage == 100) bg-success @endif @if ($t[14]->percentage < 50) bg-danger @endif" style="width: {{ $t[14]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">مشاهدة</a></td>
@@ -207,7 +207,7 @@
                     <td>• نتائج تقييم الشراكات الاستراتيجية</td>
                     <td><input onchange="change({{ $t[15]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[15]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[15]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[15]->percentage == 100) bg-success @endif @if ($t[15]->percentage < 50) bg-danger @endif" style="width: {{ $t[15]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">مشاهدة</a></td>
@@ -218,7 +218,7 @@
                     <td>• تحقيق الأهداف والتوجهات الاستراتيجية</td>
                     <td><input onchange="change({{ $t[16]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[16]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[16]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[16]->percentage == 100) bg-success @endif @if ($t[16]->percentage < 50) bg-danger @endif" style="width: {{ $t[16]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">مشاهدة</a></td>
@@ -228,7 +228,7 @@
                     <td>• إعداد ومراجعة وتحديث الاستراتيجية</td>
                     <td><input onchange="change({{ $t[17]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[17]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[17]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[17]->percentage == 100) bg-success @endif @if ($t[17]->percentage < 50) bg-danger @endif" style="width: {{ $t[17]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">مشاهدة</a></td>
@@ -238,7 +238,7 @@
                     <td>• التنسيق مع الشركاء الاستراتيجيين</td>
                     <td><input onchange="change({{ $t[18]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[18]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[18]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[18]->percentage == 100) bg-success @endif @if ($t[18]->percentage < 50) bg-danger @endif" style="width: {{ $t[18]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">مشاهدة</a></td>
@@ -248,7 +248,7 @@
                     <td>• مؤشرات الأداء الاستراتيجية</td>
                     <td><input onchange="change({{ $t[19]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[19]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[19]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[19]->percentage == 100) bg-success @endif @if ($t[19]->percentage < 50) bg-danger @endif" style="width: {{ $t[19]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">مشاهدة</a></td>
@@ -258,7 +258,7 @@
                     <td>• سلسلة ومواءمة الأهداف الاستراتيجية</td>
                     <td><input onchange="change({{ $t[20]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[20]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[20]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[20]->percentage == 100) bg-success @endif @if ($t[20]->percentage < 50) bg-danger @endif" style="width: {{ $t[20]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">مشاهدة</a></td>
@@ -268,7 +268,7 @@
                     <td>• الانشطة المتعلقة بإستشراف المستقبل</td>
                     <td><input onchange="change({{ $t[21]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[21]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[21]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[21]->percentage == 100) bg-success @endif @if ($t[21]->percentage < 50) bg-danger @endif" style="width: {{ $t[21]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">مشاهدة</a></td>
@@ -278,7 +278,7 @@
                     <td>• نتائج انطباعات الشركاء الرئيسيين</td>
                     <td><input onchange="change({{ $t[22]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[22]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[22]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[22]->percentage == 100) bg-success @endif @if ($t[22]->percentage < 50) bg-danger @endif" style="width: {{ $t[22]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">مشاهدة</a></td>
@@ -291,7 +291,7 @@
                     <td>• تطوير الخطط التشغيلية للدوائر وربطها بالخطة الاستراتيجية للوزارة</td>
                     <td><input onchange="change({{ $t[23]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[23]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[23]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[23]->percentage == 100) bg-success @endif @if ($t[23]->percentage < 50) bg-danger @endif" style="width: {{ $t[23]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">مشاهدة</a></td>
@@ -301,7 +301,7 @@
                     <td>• التخطيط المالي للمبادرات/المشاريع/البرامج في الخطط التشغيلية</td>
                     <td><input onchange="change({{ $t[24]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[24]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[24]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[24]->percentage == 100) bg-success @endif @if ($t[24]->percentage < 50) bg-danger @endif" style="width: {{ $t[24]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">مشاهدة</a></td>
@@ -311,7 +311,7 @@
                     <td>• تطبيق دراسة تحليل المنفعة أو الاحتياج مقابل التكلفة للمبادرات/المشاريع/البرامج</td>
                     <td><input onchange="change({{ $t[25]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[25]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[25]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[25]->percentage == 100) bg-success @endif @if ($t[25]->percentage < 50) bg-danger @endif" style="width: {{ $t[25]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">مشاهدة</a></td>
@@ -322,7 +322,7 @@
                         المشاريع/البرامج</td>
                     <td><input onchange="change({{ $t[26]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[26]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[26]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[26]->percentage == 100) bg-success @endif @if ($t[26]->percentage < 50) bg-danger @endif" style="width: {{ $t[26]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">مشاهدة</a></td>
@@ -332,7 +332,7 @@
                     <td>• مراجعة ومتابعة تنفيذالخطط التشغيلية من خلال مؤشرات أداء ملائمة ومسؤوليات محددة</td>
                     <td><input onchange="change({{ $t[27]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[27]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[27]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[27]->percentage == 100) bg-success @endif @if ($t[27]->percentage < 50) bg-danger @endif" style="width: {{ $t[27]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">مشاهدة</a></td>
@@ -343,7 +343,7 @@
                         المعرفة وتحقيق الاهداف الاستراتيجية</td>
                     <td><input onchange="change({{ $t[28]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[28]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[28]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[28]->percentage == 100) bg-success @endif @if ($t[28]->percentage < 50) bg-danger @endif" style="width: {{ $t[28]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[28]->id]) }}">مشاهدة</a></td>
@@ -355,7 +355,7 @@
                     <td>• تطبيق المبادرات/المشاريع/البرامج (البعد الزمني والموازنة والموارد)</td>
                     <td><input onchange="change({{ $t[29]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[29]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[29]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[29]->percentage == 100) bg-success @endif @if ($t[29]->percentage < 50) bg-danger @endif" style="width: {{ $t[29]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[29]->id]) }}">مشاهدة</a></td>
@@ -365,7 +365,7 @@
                     <td>• تحقيق أهداف المبادرات/المشاريع/البرامج على المستوى التشغيلي</td>
                     <td><input onchange="change({{ $t[30]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[30]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[30]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[30]->percentage == 100) bg-success @endif @if ($t[30]->percentage < 50) bg-danger @endif" style="width: {{ $t[30]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[30]->id]) }}">مشاهدة</a></td>
@@ -375,7 +375,7 @@
                     <td>• تحقيق قيمة اضافية لصالح ذوي العلاقة</td>
                     <td><input onchange="change({{ $t[31]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[31]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[31]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[31]->percentage == 100) bg-success @endif @if ($t[31]->percentage < 50) bg-danger @endif" style="width: {{ $t[31]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[31]->id]) }}">مشاهدة</a></td>
@@ -385,7 +385,7 @@
                     <td>• انعكاسات تطبيق المبادرات/المشاريع/البرامج المادية وغير المادية</td>
                     <td><input onchange="change({{ $t[32]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[32]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[32]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[32]->percentage == 100) bg-success @endif @if ($t[32]->percentage < 50) bg-danger @endif" style="width: {{ $t[32]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[32]->id]) }}">مشاهدة</a></td>
@@ -395,7 +395,7 @@
                     <td>• تطوير المبادرات/المشاريع/البرامج جديدة</td>
                     <td><input onchange="change({{ $t[33]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[33]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[33]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[33]->percentage == 100) bg-success @endif @if ($t[33]->percentage < 50) bg-danger @endif" style="width: {{ $t[33]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[33]->id]) }}">مشاهدة</a></td>
@@ -408,7 +408,7 @@
                     <td>• تبني وتطبيق خطة عمل لإدارة المخاطر واستمرارية الاعمال</td>
                     <td><input onchange="change({{ $t[34]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[34]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[34]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[34]->percentage == 100) bg-success @endif @if ($t[34]->percentage < 50) bg-danger @endif" style="width: {{ $t[34]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[34]->id]) }}">مشاهدة</a></td>
@@ -418,7 +418,7 @@
                     <td>• إعداد سجل خاص بالمخاطر المحتملة وضمان دورية تحديثه</td>
                     <td><input onchange="change({{ $t[35]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[35]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[35]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[35]->percentage == 100) bg-success @endif @if ($t[35]->percentage < 50) bg-danger @endif" style="width: {{ $t[35]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[35]->id]) }}">مشاهدة</a></td>
@@ -428,7 +428,7 @@
                     <td>• تطبيق آليات التواصل والتشاور مع أصحاب العلاقة في ما يخص إدارة المخاطر واستمرارية الاعمال</td>
                     <td><input onchange="change({{ $t[36]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[36]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[36]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[36]->percentage == 100) bg-success @endif @if ($t[36]->percentage < 50) bg-danger @endif" style="width: {{ $t[36]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[36]->id]) }}">مشاهدة</a></td>
@@ -438,7 +438,7 @@
                     <td>• المراجعة والتقييم الدوري لخطة عمل إدارة المخاطر واستمرارية الاعمال</td>
                     <td><input onchange="change({{ $t[37]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[37]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[37]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[37]->percentage == 100) bg-success @endif @if ($t[37]->percentage < 50) bg-danger @endif" style="width: {{ $t[37]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[37]->id]) }}">مشاهدة</a></td>
@@ -450,7 +450,7 @@
                     <td>• مؤشرات متعلقة بالمخاطر/الفرص المحتملة</td>
                     <td><input onchange="change({{ $t[38]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[38]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[38]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[38]->percentage == 100) bg-success @endif @if ($t[38]->percentage < 50) bg-danger @endif" style="width: {{ $t[38]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[38]->id]) }}">مشاهدة</a></td>
@@ -460,7 +460,7 @@
                     <td>• نتائج النجاح في التعامل مع المخاطر</td>
                     <td><input onchange="change({{ $t[39]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[39]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[39]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[39]->percentage == 100) bg-success @endif @if ($t[39]->percentage < 50) bg-danger @endif" style="width: {{ $t[39]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[39]->id]) }}">مشاهدة</a></td>
@@ -470,7 +470,7 @@
                     <td>• مؤشرات مدى كفاءة وفاعلية الاجراءات المطبقة لمعالجة المخاطر</td>
                     <td><input onchange="change({{ $t[40]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[40]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[40]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[40]->percentage == 100) bg-success @endif @if ($t[40]->percentage < 50) bg-danger @endif" style="width: {{ $t[40]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[40]->id]) }}">مشاهدة</a></td>
@@ -480,7 +480,7 @@
                     <td>• نتائج خطة عمل إدارة المخاطر واستمرارية الأعمال</td>
                     <td><input onchange="change({{ $t[41]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[41]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[41]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[41]->percentage == 100) bg-success @endif @if ($t[41]->percentage < 50) bg-danger @endif" style="width: {{ $t[41]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[41]->id]) }}">مشاهدة</a></td>
@@ -491,7 +491,7 @@
                     <td>• مقاييس رأي ذوي العلاقة في إدارة المخاطر وإستمرارية الاعمال</td>
                     <td><input onchange="change({{ $t[42]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[42]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[42]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[42]->percentage == 100) bg-success @endif @if ($t[42]->percentage < 50) bg-danger @endif" style="width: {{ $t[42]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[42]->id]) }}">مشاهدة</a></td>
@@ -505,7 +505,7 @@
                         وسياسات الوزارة لتحقيق الاستدامة</td>
                     <td><input onchange="change({{ $t[43]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[43]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[43]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[43]->percentage == 100) bg-success @endif @if ($t[43]->percentage < 50) bg-danger @endif" style="width: {{ $t[43]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[43]->id]) }}">مشاهدة</a></td>
@@ -516,7 +516,7 @@
                     </td>
                     <td><input onchange="change({{ $t[44]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[44]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[44]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[44]->percentage == 100) bg-success @endif @if ($t[44]->percentage < 50) bg-danger @endif" style="width: {{ $t[44]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[44]->id]) }}">مشاهدة</a></td>
@@ -526,7 +526,7 @@
                     <td>• تحديد تأثير أنشطة وخدمات وسياسات وزارة الشباب على الاستدامة</td>
                     <td><input onchange="change({{ $t[45]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[45]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[45]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[45]->percentage == 100) bg-success @endif @if ($t[45]->percentage < 50) bg-danger @endif" style="width: {{ $t[45]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[45]->id]) }}">مشاهدة</a></td>
@@ -536,7 +536,7 @@
                     <td>• تحديد مجالات التقاطع مع أهداف التنمية المستدامة والعمل على تحقيق متطلباتها</td>
                     <td><input onchange="change({{ $t[46]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[46]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[46]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[46]->percentage == 100) bg-success @endif @if ($t[46]->percentage < 50) bg-danger @endif" style="width: {{ $t[46]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[46]->id]) }}">مشاهدة</a></td>
@@ -548,7 +548,7 @@
                     <td>• الأداء الاقتصادي والبيئي والاجتماعي ذات العلاقة بعمل وزارة الشباب</td>
                     <td><input onchange="change({{ $t[47]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[47]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[47]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[47]->percentage == 100) bg-success @endif @if ($t[47]->percentage < 50) bg-danger @endif" style="width: {{ $t[47]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[47]->id]) }}">مشاهدة</a></td>
@@ -558,7 +558,7 @@
                     <td>• مدى تأثير أنشطة وخدمات برامج ومبادرات وسياسات وزارة الشباب على استخدامه</td>
                     <td><input onchange="change({{ $t[48]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[48]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[48]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[48]->percentage == 100) bg-success @endif @if ($t[48]->percentage < 50) bg-danger @endif" style="width: {{ $t[48]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[48]->id]) }}">مشاهدة</a></td>
@@ -569,7 +569,7 @@
                     </td>
                     <td><input onchange="change({{ $t[49]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[49]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[49]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[49]->percentage == 100) bg-success @endif @if ($t[49]->percentage < 50) bg-danger @endif" style="width: {{ $t[49]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[49]->id]) }}">مشاهدة</a></td>
@@ -580,7 +580,7 @@
                     <td>• مقاييس رأي كافة الفئات المعنية عن ممارسة وزارة الشباب المتعلقة بالاستدامة</td>
                     <td><input onchange="change({{ $t[50]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[50]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[50]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[50]->percentage == 100) bg-success @endif @if ($t[50]->percentage < 50) bg-danger @endif" style="width: {{ $t[50]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[50]->id]) }}">مشاهدة</a></td>
@@ -590,7 +590,7 @@
                     <td>• مقاييس رأي كافة الفئات المعنية عن ممارسة وزارة الشباب المتعلقة بأهداف التنمية المستدامة</td>
                     <td><input onchange="change({{ $t[51]->id }}, this.value)" onclick="this.select()" type="text" name="" class="form-control form-control-sm mb-1" value="{{ $t[51]->percentage }}%"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ $t[51]->percentage }}%"></div>
+                            <div class="progress-bar @if ($t[51]->percentage == 100) bg-success @endif @if ($t[51]->percentage < 50) bg-danger @endif" style="width: {{ $t[51]->percentage }}%"></div>
                         </div>
                     </td>
                     <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[51]->id]) }}">مشاهدة</a></td>
