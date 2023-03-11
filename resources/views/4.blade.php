@@ -52,7 +52,7 @@
                             <div class="progress-bar" style="width: {{ $t[0]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -63,7 +63,7 @@
                             <div class="progress-bar" style="width: {{ $t[1]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -73,7 +73,7 @@
                             <div class="progress-bar" style="width: {{ $t[2]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -83,7 +83,7 @@
                             <div class="progress-bar" style="width: {{ $t[3]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -93,7 +93,7 @@
                             <div class="progress-bar" style="width: {{ $t[4]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -103,7 +103,7 @@
                             <div class="progress-bar" style="width: {{ $t[5]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -115,7 +115,7 @@
                             <div class="progress-bar" style="width: {{ $t[6]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -125,7 +125,7 @@
                             <div class="progress-bar" style="width: {{ $t[7]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -137,7 +137,7 @@
                             <div class="progress-bar" style="width: {{ $t[8]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -147,7 +147,7 @@
                             <div class="progress-bar" style="width: {{ $t[9]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -157,7 +157,7 @@
                             <div class="progress-bar" style="width: {{ $t[10]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -167,7 +167,7 @@
                             <div class="progress-bar" style="width: {{ $t[11]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -177,7 +177,7 @@
                             <div class="progress-bar" style="width: {{ $t[12]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -188,7 +188,7 @@
                             <div class="progress-bar" style="width: {{ $t[13]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -198,7 +198,7 @@
                             <div class="progress-bar" style="width: {{ $t[14]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -208,7 +208,7 @@
                             <div class="progress-bar" style="width: {{ $t[15]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -218,7 +218,7 @@
                             <div class="progress-bar" style="width: {{ $t[16]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -228,7 +228,7 @@
                             <div class="progress-bar" style="width: {{ $t[17]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -238,7 +238,7 @@
                             <div class="progress-bar" style="width: {{ $t[18]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -248,7 +248,7 @@
                             <div class="progress-bar" style="width: {{ $t[19]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -261,7 +261,7 @@
                             <div class="progress-bar" style="width: {{ $t[20]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -273,7 +273,7 @@
                             <div class="progress-bar" style="width: {{ $t[21]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -283,7 +283,7 @@
                             <div class="progress-bar" style="width: {{ $t[22]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -294,7 +294,7 @@
                             <div class="progress-bar" style="width: {{ $t[23]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -304,7 +304,7 @@
                             <div class="progress-bar" style="width: {{ $t[24]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -314,7 +314,7 @@
                             <div class="progress-bar" style="width: {{ $t[25]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -326,7 +326,7 @@
                             <div class="progress-bar" style="width: {{ $t[26]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -336,7 +336,7 @@
                             <div class="progress-bar" style="width: {{ $t[27]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -346,7 +346,7 @@
                             <div class="progress-bar" style="width: {{ $t[28]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[28]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[28]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -356,7 +356,7 @@
                             <div class="progress-bar" style="width: {{ $t[29]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[29]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[29]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -368,7 +368,7 @@
                             <div class="progress-bar" style="width: {{ $t[30]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[30]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[30]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -378,7 +378,7 @@
                             <div class="progress-bar" style="width: {{ $t[31]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[31]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[31]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -388,7 +388,7 @@
                             <div class="progress-bar" style="width: {{ $t[32]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[32]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[32]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -398,7 +398,7 @@
                             <div class="progress-bar" style="width: {{ $t[33]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[33]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[33]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -408,7 +408,7 @@
                             <div class="progress-bar" style="width: {{ $t[34]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[34]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[34]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -418,7 +418,7 @@
                             <div class="progress-bar" style="width: {{ $t[35]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[35]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[35]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -428,7 +428,7 @@
                             <div class="progress-bar" style="width: {{ $t[36]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[36]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[36]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -438,7 +438,7 @@
                             <div class="progress-bar" style="width: {{ $t[37]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[37]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[37]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -450,7 +450,7 @@
                             <div class="progress-bar" style="width: {{ $t[38]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[38]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[38]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -465,7 +465,7 @@
                             <div class="progress-bar" style="width: {{ $t[39]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[39]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[39]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -475,7 +475,7 @@
                             <div class="progress-bar" style="width: {{ $t[40]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[40]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[40]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -485,7 +485,7 @@
                             <div class="progress-bar" style="width: {{ $t[41]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[41]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[41]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -495,7 +495,7 @@
                             <div class="progress-bar" style="width: {{ $t[42]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[42]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[42]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -506,7 +506,7 @@
                             <div class="progress-bar" style="width: {{ $t[43]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[43]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[43]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -516,7 +516,7 @@
                             <div class="progress-bar" style="width: {{ $t[44]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[44]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[44]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -526,7 +526,7 @@
                             <div class="progress-bar" style="width: {{ $t[45]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[45]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[45]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -538,7 +538,7 @@
                             <div class="progress-bar" style="width: {{ $t[46]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[46]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[46]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -548,7 +548,7 @@
                             <div class="progress-bar" style="width: {{ $t[47]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[47]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[47]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -558,7 +558,7 @@
                             <div class="progress-bar" style="width: {{ $t[48]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[48]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[48]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -568,7 +568,7 @@
                             <div class="progress-bar" style="width: {{ $t[49]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[49]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[49]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -578,7 +578,7 @@
                             <div class="progress-bar" style="width: {{ $t[50]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[50]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[50]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -588,7 +588,7 @@
                             <div class="progress-bar" style="width: {{ $t[51]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[51]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[51]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -598,7 +598,7 @@
                             <div class="progress-bar" style="width: {{ $t[52]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[52]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[52]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -608,7 +608,7 @@
                             <div class="progress-bar" style="width: {{ $t[53]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[53]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[53]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -623,7 +623,7 @@
                             <div class="progress-bar" style="width: {{ $t[54]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[54]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[54]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -635,7 +635,7 @@
                             <div class="progress-bar" style="width: {{ $t[55]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[55]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[55]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -647,7 +647,7 @@
                             <div class="progress-bar" style="width: {{ $t[56]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[56]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[56]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -657,7 +657,7 @@
                             <div class="progress-bar" style="width: {{ $t[57]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[57]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[57]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -669,7 +669,7 @@
                             <div class="progress-bar" style="width: {{ $t[58]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[58]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[58]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -679,7 +679,7 @@
                             <div class="progress-bar" style="width: {{ $t[59]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[59]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[59]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -689,7 +689,7 @@
                             <div class="progress-bar" style="width: {{ $t[60]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[60]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[60]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -699,7 +699,7 @@
                             <div class="progress-bar" style="width: {{ $t[61]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[61]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[61]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -709,7 +709,7 @@
                             <div class="progress-bar" style="width: {{ $t[62]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[62]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[62]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -719,7 +719,7 @@
                             <div class="progress-bar" style="width: {{ $t[63]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[63]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[63]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -729,7 +729,7 @@
                             <div class="progress-bar" style="width: {{ $t[64]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><button class="btn btn-success">مشاهدة</button></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[64]->id]) }}">مشاهدة</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[64]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
             </tbody>
