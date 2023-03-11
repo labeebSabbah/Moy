@@ -19,6 +19,8 @@
 
     </x-slot:styles>
 
+    <a href="{{ route('home') }}" class="btn btn-primary" style="position: fixed; top: 10px; right: 10px;"><i class="fa-solid fa-arrow-right"></i></a>
+
     <div class="d-flex flex-column justify-content-center align-items-center">
 
         <canvas id="1" class="w-50 h-50"></canvas>

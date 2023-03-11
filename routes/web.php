@@ -4,8 +4,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
 use App\Http\Controllers\AttachmentController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -92,6 +94,10 @@ Route::middleware('auth')->group(function() {
     Route::post('/attachments', [AttachmentController::class, 'store'])->name('attachments.store');
 
     Route::get('/attachments/{task}', [AttachmentController::class, 'index'])->name('attachments.index');
+
+    Route::post('/notes', [NoteController::class, 'store'])->name('notes.store');
+    
+    Route::get('/notes/{task}', [NoteController::class, 'index'])->name('notes.index');
 
     Route::put('/task/update', [TaskController::class, 'update'])->name('task.update');
 

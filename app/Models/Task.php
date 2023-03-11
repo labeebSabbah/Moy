@@ -21,4 +21,9 @@ class Task extends Model
     {
         return $this->hasMany(Attachment::class);
     }
+
+    public function notes()
+    {
+        return $this->hasMany(Note::class);
+    }
 }
