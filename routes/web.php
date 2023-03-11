@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
+use App\Models\Standard;
+
 use App\Http\Controllers\AttachmentController;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\TaskController;
@@ -51,43 +53,50 @@ Route::middleware('auth')->group(function() {
 
     Route::middleware('standard:1')->group(function () {
         Route::get('/1', function () {
-            return view('1');
+            $standard = Standard::where('name', '1')->first();
+            return view('1', compact('standard'));
         });
     });
     
     Route::middleware('standard:2')->group(function () {
         Route::get('/2', function () {
-            return view('2');
+            $standard = Standard::where('name', '2')->first();
+            return view('2', compact('standard'));
         });
     });
 
     Route::middleware('standard:3')->group(function () {
         Route::get('/3', function () {
-            return view('3');
+            $standard = Standard::where('name', '3')->first();
+            return view('3', compact('standard'));
         });
     });
 
     Route::middleware('standard:4')->group(function () {
         Route::get('/4', function () {
-            return view('4');
+            $standard = Standard::where('name', '4')->first();
+            return view('4', compact('standard'));
         });
     });
 
     Route::middleware('standard:5')->group(function () {
         Route::get('/5', function () {
-            return view('5');
+            $standard = Standard::where('name', '5')->first();
+            return view('5', compact('standard'));
         });
     });
 
     Route::middleware('standard:6')->group(function () {
         Route::get('/6', function () {
-            return view('6');
+            $standard = Standard::where('name', '6')->first();
+            return view('6', compact('standard'));
         });
     });
 
     Route::middleware('standard:7')->group(function () {
         Route::get('/7', function () {
-            return view('7');
+            $standard = Standard::where('name', '7')->first();
+            return view('7', compact('standard'));
         });
     });
 

@@ -30,12 +30,14 @@
         </style>
 
     </x-slot:styles>
+    <a href="{{ route('home') }}" class="btn btn-primary" style="position: fixed; top: 10px; right: 10px;"><i class="fa-solid fa-arrow-right"></i></a>
     <div class="d-flex justify-content-start">
         <table class="table table-responsive text-center align-middle" style="width: 95%; height: 80%;">
             <tr>
-                <th colspan="4" style="background: blue; color: white; font-weight: 900;">التحول الرقمي</th>
-                <th style="width: 10%">نسبة الانجاز</th>
-                <th style="width: 20%;">الملاحظات</th>
+                <th colspan="3" style="background: blue; color: white; font-weight: 900;">التحول الرقمي</th>
+                <th>{{ $standard->percentage }}%</th>
+                <th style="width: 20%">نسبة الانجاز</th>
+                <th style="width: 10%;">الملاحظات</th>
                 <th>الوسائط</th>
             </tr>
             <tr>
