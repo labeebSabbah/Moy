@@ -15,12 +15,19 @@ class NoteController extends Controller
             abort(403);
         }
         $notes = $task->notes;
-        return view('attachments', compact(['attachments', 'task']));
+        return view('notes', compact(['notes', 'task']));
     }
 
     public function store(Request $request)
     {
-        Task::create($request->all());
+        $request->validate([
+            'task_id' => 'required|integer',
+            'message' => 'required|string',
+        ]);
+        $note = new Note;
+        $note->task_id = $request->task_id;
+        $note->message = $request->message;
+        $note->save();
         return redirect()->back();
     }
 }

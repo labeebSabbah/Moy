@@ -1,6 +1,6 @@
 <x-app>
 
-    <x-slot:title>Attachments</x-slot:title>
+    <x-slot:title>Notes</x-slot:title>
 
     <x-slot:styles>
 
@@ -43,11 +43,10 @@
 
             <tr>
 
-                <th>الاسم</th>
+                <th>الملاحظة</th>
 
                 <th style="width: 20%">تاريخ النشر</th>
 
-                <th style="width: 10%">تحميل</th>
 
             </tr>
 
@@ -55,19 +54,12 @@
 
         <tbody>
 
-            @foreach ($attachments as $attachment)
+            @foreach ($notes as $note)
                 <tr>
 
-                    <td>{{ $attachment->name }}</td>
+                    <td>{{ $note->message }}</td>
 
-                    <td>{{ $attachment->created_at }}</td>
-
-                    <td>
-
-                        <a href="{{ url($attachment->path) }}" class="btn btn-primary" download><i
-                                class="fa-solid fa-download"></i></a>
-
-                    </td>
+                    <td>{{ $note->created_at }}</td>
 
                 </tr>
             @endforeach
@@ -84,7 +76,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{ route('attachments.store') }}" class="form" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('notes.store') }}" class="form" method="POST">
                     
                         @csrf
 
@@ -92,13 +84,8 @@
                         <input type="hidden" name="standard" value="{{ $task->standard }}">
 
                         <div class="form-group mb-3">
-                            <label for="name">الاسم</label>
-                            <input type="text" name="name" id="name" class="form-control">
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label for="file">الملف</label>
-                            <input type="file" name="file" id="file" class="form-control">
+                            <label for="message">الملاحظة</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
                         </div>
                     
                     </form>
