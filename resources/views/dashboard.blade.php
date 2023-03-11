@@ -129,7 +129,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'التوجهات الوطنية والقطاعية',
+                                text: 'التوجهات الوطنية والقطاعية  {{ $s[0]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -151,7 +151,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'الدور القيادي',
+                                text: 'الدور القيادي  {{ $s[1]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -173,7 +173,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'الاستراتيجية المؤسسية',
+                                text: 'الاستراتيجية المؤسسية  {{ $s[2]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -195,7 +195,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'ادارة الموارد الحكومية',
+                                text: 'ادارة الموارد الحكومية  {{ $s[3]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -217,7 +217,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'المهام الحكومية',
+                                text: 'المهام الحكومية  {{ $s[4]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -239,7 +239,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'التحول الرقمي',
+                                text: 'التحول الرقمي  {{ $s[5]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
@@ -261,7 +261,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'التحسين و التطوير',
+                                text: 'التحسين و التطوير  {{ $s[6]->percentage }}%',
                                 position: 'bottom',
                                 font: {
                                     size: 50,
