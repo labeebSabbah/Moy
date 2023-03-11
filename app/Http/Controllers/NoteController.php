@@ -30,4 +30,22 @@ class NoteController extends Controller
         $note->save();
         return redirect()->back();
     }
+
+    public function update(Request $request)
+    {
+        $request->validate([
+            'id' => 'required|integer',
+            'message' => 'required|string'
+        ]);
+        $note = Note::find($request->id);
+        $note->message = $request->message;
+        $note->save();
+        return redirect()->back();
+    }
+
+    public function destroy(Note $note)
+    {
+        $note->delete();
+        return redirect()->back();
+    }
 }

@@ -108,6 +108,10 @@ Route::middleware('auth')->group(function() {
     
     Route::get('/notes/{task}', [NoteController::class, 'index'])->name('notes.index');
 
+    Route::put('/note/update', [NoteController::class, 'update'])->name('notes.update');
+
+    Route::get('/note/{note}/destroy', [NoteController::class, 'destroy'])->name('notes.destroy');
+
     Route::put('/task/update', [TaskController::class, 'update'])->name('task.update');
 
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
