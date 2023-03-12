@@ -14,7 +14,7 @@ class NoteController extends Controller
         if (auth()->user()->standard != $task->standard && auth()->user()->standard != 0) {
             abort(403);
         }
-        $notes = $task->notes;
+        $notes = $task->notes()->latest()->get();
         return view('notes', compact(['notes', 'task']));
     }
 

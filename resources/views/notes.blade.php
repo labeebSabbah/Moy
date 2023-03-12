@@ -30,23 +30,7 @@
 
     </x-slot:styles>
 
-    @if ($errors->any())
-
-        <div class="alert alert-danger">
-
-            <ul>
-
-                @foreach ($errors->all() as $error)
-
-                    <li>{{ $error }}</li>
-
-                @endforeach
-
-            </ul>
-
-        </div>
-
-    @endif
+    <a href="{{ route($task->standard) }}" class="btn btn-primary" style="position: fixed; top: 10px; right: 10px;"><i class="fa-solid fa-arrow-right"></i></a>
 
     <table class="table table-responsive text-center align-middle">
 
@@ -79,7 +63,7 @@
             @foreach ($notes as $note)
                 <tr>
 
-                    <td><a href="{{ route('notes.destroy', ['note' => $note->id]) }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete" onclick="remove({{ $note->id }})"><i class="fa-solid fa-trash"></i></button></td>
 
                     <td>{{ $note->message }}</td>
 
@@ -156,6 +140,26 @@
         </div>
     </div>
 
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addLabel">حذف</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>
+                        هل انت متأكد من رغبتك بالحذف ؟ 
+                    </h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+                    <a id="remove" href="" class="btn btn-danger">حذف</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <x-slot:scripts>
 
     <script>
@@ -164,6 +168,13 @@
 
             $('#id').val(id);
             $('#up_message').html(message);
+
+        }
+
+        function remove(id)
+        {
+
+            $('#remove').attr('href', "@php echo url('note') @endphp" + `/${id}/destroy`);
 
         }
 

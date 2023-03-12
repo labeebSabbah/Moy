@@ -54,7 +54,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}">
@@ -72,7 +72,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}">
@@ -90,7 +90,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}">
@@ -108,7 +108,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}">
@@ -127,7 +127,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}">
@@ -145,7 +145,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}">
@@ -163,7 +163,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}">
@@ -181,7 +181,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}">
@@ -201,7 +201,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}">
@@ -219,7 +219,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}">
@@ -237,7 +237,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}">
@@ -255,7 +255,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}">
@@ -273,7 +273,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}">
@@ -291,7 +291,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}">
@@ -312,7 +312,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}">
@@ -332,7 +332,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}">
@@ -350,7 +350,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}">
@@ -368,7 +368,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}">
@@ -386,7 +386,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}">
@@ -406,7 +406,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}">
@@ -424,7 +424,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}">
@@ -442,7 +442,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}">
@@ -460,7 +460,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}">
@@ -479,7 +479,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}">
@@ -497,7 +497,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}">
@@ -515,7 +515,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}">
@@ -533,7 +533,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}">
@@ -551,7 +551,7 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">مشاهدة</a>
+                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
                     <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}">

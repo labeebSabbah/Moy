@@ -30,6 +30,8 @@
 
     </x-slot:styles>
 
+    <a href="{{ route($task->standard) }}" class="btn btn-primary" style="position: fixed; top: 10px; right: 10px;"><i class="fa-solid fa-arrow-right"></i></a>
+
     <table class="table table-responsive text-center align-middle">
 
         <thead>

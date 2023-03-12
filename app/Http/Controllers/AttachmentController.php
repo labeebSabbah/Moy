@@ -14,7 +14,7 @@ class AttachmentController extends Controller
         if (auth()->user()->standard != $task->standard && auth()->user()->standard != 0) {
             abort(403);
         }
-        $attachments = $task->attachments;
+        $attachments = $task->attachments()->latest()->get();
         return view('attachments', compact(['attachments', 'task']));
     }
 

@@ -55,7 +55,7 @@
                             <div class="progress-bar @if ($t[0]->percentage < 50) bg-danger @endif @if ($t[0]->percentage == 100) bg-success @endif" style="width: {{ $t[0]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -67,7 +67,7 @@
                             <div class="progress-bar @if ($t[1]->percentage < 50) bg-danger @endif @if ($t[1]->percentage == 100) bg-success @endif" style="width: {{ $t[1]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -78,7 +78,7 @@
                             <div class="progress-bar @if ($t[2]->percentage < 50) bg-danger @endif @if ($t[2]->percentage == 100) bg-success @endif" style="width: {{ $t[2]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -90,7 +90,7 @@
                             <div class="progress-bar @if ($t[3]->percentage < 50) bg-danger @endif @if ($t[3]->percentage == 100) bg-success @endif" style="width: {{ $t[3]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -101,7 +101,7 @@
                             <div class="progress-bar @if ($t[4]->percentage < 50) bg-danger @endif @if ($t[4]->percentage == 100) bg-success @endif" style="width: {{ $t[4]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -112,7 +112,7 @@
                             <div class="progress-bar @if ($t[5]->percentage < 50) bg-danger @endif @if ($t[5]->percentage == 100) bg-success @endif" style="width: {{ $t[5]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -126,7 +126,7 @@
                             <div class="progress-bar @if ($t[6]->percentage < 50) bg-danger @endif @if ($t[6]->percentage == 100) bg-success @endif" style="width: {{ $t[6]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -137,7 +137,7 @@
                             <div class="progress-bar @if ($t[7]->percentage < 50) bg-danger @endif @if ($t[7]->percentage == 100) bg-success @endif" style="width: {{ $t[7]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -148,7 +148,7 @@
                             <div class="progress-bar @if ($t[8]->percentage < 50) bg-danger @endif @if ($t[8]->percentage == 100) bg-success @endif" style="width: {{ $t[8]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -160,7 +160,7 @@
                             <div class="progress-bar @if ($t[9]->percentage < 50) bg-danger @endif @if ($t[9]->percentage == 100) bg-success @endif" style="width: {{ $t[9]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -171,7 +171,7 @@
                             <div class="progress-bar @if ($t[10]->percentage < 50) bg-danger @endif @if ($t[10]->percentage == 100) bg-success @endif" style="width: {{ $t[10]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
@@ -182,7 +182,7 @@
                             <div class="progress-bar @if ($t[11]->percentage < 50) bg-danger @endif @if ($t[11]->percentage == 100) bg-success @endif" style="width: {{ $t[11]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">مشاهدة</a></td>
+                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a></td>
                     <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
             </tbody>

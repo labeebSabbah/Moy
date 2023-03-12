@@ -55,49 +55,49 @@ Route::middleware('auth')->group(function() {
         Route::get('/1', function () {
             $standard = Standard::where('name', '1')->first();
             return view('1', compact('standard'));
-        });
+        })->name('1');
     });
     
     Route::middleware('standard:2')->group(function () {
         Route::get('/2', function () {
             $standard = Standard::where('name', '2')->first();
             return view('2', compact('standard'));
-        });
+        })->name('2');
     });
 
     Route::middleware('standard:3')->group(function () {
         Route::get('/3', function () {
             $standard = Standard::where('name', '3')->first();
             return view('3', compact('standard'));
-        });
+        })->name('3');
     });
 
     Route::middleware('standard:4')->group(function () {
         Route::get('/4', function () {
             $standard = Standard::where('name', '4')->first();
             return view('4', compact('standard'));
-        });
+        })->name('4');
     });
 
     Route::middleware('standard:5')->group(function () {
         Route::get('/5', function () {
             $standard = Standard::where('name', '5')->first();
             return view('5', compact('standard'));
-        });
+        })->name('5');
     });
 
     Route::middleware('standard:6')->group(function () {
         Route::get('/6', function () {
             $standard = Standard::where('name', '6')->first();
             return view('6', compact('standard'));
-        });
+        })->name('6');
     });
 
     Route::middleware('standard:7')->group(function () {
         Route::get('/7', function () {
             $standard = Standard::where('name', '7')->first();
             return view('7', compact('standard'));
-        });
+        })->name('7');
     });
 
     Route::post('/attachments', [AttachmentController::class, 'store'])->name('attachments.store');
