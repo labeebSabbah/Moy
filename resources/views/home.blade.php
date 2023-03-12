@@ -24,55 +24,47 @@
 
         </div>
 
-        <div class="row my-5" style="margin-top: 100px !important;">
+        <div class="my-5" style="margin-top: 100px !important;">
 
-            <div class="col-12 d-flex justify-content-around">
+            <div class="d-flex justify-content-around">
 
+                <div class="dropdown">
+                    <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      محور التخطيط
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ route('1') }}">1 - التوجهات الوطنية والقطاعية</a></li>
+                      <li><a class="dropdown-item" href="{{ route('2') }}">2 - الدور القيادي</a></li>
+                      <li><a class="dropdown-item" href="{{ route('3') }}">3 - الاستراتيجية المؤسسية</a></li>
+                    </ul>
+                  </div>
 
-                <a href="{{ url('1') }}" class="btn btn-lg btn-secondary">
-                    <h4>التوجهات الوطنية والقطاعية</h4>
-                </a>
+                  <div class="dropdown">
+                    <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      محور التنفيذ
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ route('4') }}">4 - ادارة الموارد الحكومية</a></li>
+                      <li><a class="dropdown-item" href="{{ route('5') }}">5 - المهام الحكومية</a></li>
+                      <li><a class="dropdown-item" href="{{ route('6') }}">6 - التحول الرقمي</a></li>
+                    </ul>
+                  </div>
 
-                <a href="{{ url('2') }}" class="btn btn-lg btn-secondary">
-                    <h4>الدور القيادي</h4>
-                </a>
+                  <div class="dropdown">
+                    <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      محور التحول
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ route('7') }}">7 - التحسين والتطوير</a></li>
+                    </ul>
+                  </div>
 
-                <a href="{{ url('3') }}" class="btn btn-lg btn-secondary">
-                    <h4>الاستراتيجية المؤسسية</h4>
-                </a>
-
-                <a href="{{ url('4') }}" class="btn btn-lg btn-secondary">
-                    <h4>ادارة الموارد الحكومية</h4>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="row my-5">
-
-            <div class="col-12 d-flex justify-content-around">
-
-                <a href="{{ url('5') }}" class="btn btn-lg btn-secondary">
-                    <h4>المهام الحكومية</h4>
-                </a>
-
-                <a href="{{ url('6') }}" class="btn btn-lg btn-secondary">
-                    <h4>التحول الرقمي</h4>
-                </a>
-
-                <a href="{{ url('7') }}" class="btn btn-lg btn-secondary">
-                    <h4>التحسين والتطوير</h4>
-                </a>
-
-                <a href="{{ route('dashboard') }}" class="btn btn-lg btn-secondary">
+                  <a href="{{ route('dashboard') }}" class="btn btn-secondary">
                     <h4>لوحة المعلومات</h4>
                 </a>
 
             </div>
 
         </div>
-
-    </div>
 
 </x-app>

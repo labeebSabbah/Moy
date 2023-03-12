@@ -54,10 +54,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[0]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}">
+                    <a class="btn @if (count($t[0]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -72,10 +72,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[1]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}">
+                    <a class="btn @if (count($t[1]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -90,10 +90,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[2]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}">
+                    <a class="btn @if (count($t[2]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -108,10 +108,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[3]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}">
+                    <a class="btn @if (count($t[3]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -127,10 +127,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[4]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}">
+                    <a class="btn @if (count($t[4]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -145,10 +145,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[5]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}">
+                    <a class="btn @if (count($t[5]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -163,10 +163,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[6]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}">
+                    <a class="btn @if (count($t[6]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -181,10 +181,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[7]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}">
+                    <a class="btn @if (count($t[7]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -201,10 +201,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[8]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}">
+                    <a class="btn @if (count($t[8]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -219,10 +219,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[9]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}">
+                    <a class="btn @if (count($t[9]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -237,10 +237,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[10]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}">
+                    <a class="btn @if (count($t[10]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -255,10 +255,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[11]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}">
+                    <a class="btn @if (count($t[11]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -273,10 +273,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[12]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}">
+                    <a class="btn @if (count($t[12]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -291,10 +291,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[13]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}">
+                    <a class="btn @if (count($t[13]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -312,10 +312,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[14]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}">
+                    <a class="btn @if (count($t[14]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -332,10 +332,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[15]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}">
+                    <a class="btn @if (count($t[15]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -350,10 +350,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[16]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}">
+                    <a class="btn @if (count($t[16]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -368,10 +368,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[17]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}">
+                    <a class="btn @if (count($t[17]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -386,10 +386,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[18]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}">
+                    <a class="btn @if (count($t[18]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -406,10 +406,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[19]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}">
+                    <a class="btn @if (count($t[19]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -424,10 +424,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[20]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}">
+                    <a class="btn @if (count($t[20]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -442,10 +442,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[21]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}">
+                    <a class="btn @if (count($t[21]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -460,10 +460,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[22]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}">
+                    <a class="btn @if (count($t[22]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -479,10 +479,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[23]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}">
+                    <a class="btn @if (count($t[23]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -497,10 +497,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[24]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}">
+                    <a class="btn @if (count($t[24]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -515,10 +515,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[25]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}">
+                    <a class="btn @if (count($t[25]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -533,10 +533,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[26]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}">
+                    <a class="btn @if (count($t[26]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>
@@ -551,10 +551,10 @@
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">ملاحظات</a>
+                    <a class="btn @if (count($t[27]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">ملاحظات</a>
                 </td>
                 <td>
-                    <a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}">
+                    <a class="btn @if (count($t[27]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}">
                         <i class="fa-solid fa-paperclip"></i>    
                     </a>
                 </td>

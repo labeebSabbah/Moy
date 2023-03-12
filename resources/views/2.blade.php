@@ -52,8 +52,8 @@
                             <div class="progress-bar @if ($t[0]->percentage == 100) bg-success @endif @if ($t[0]->percentage < 50) bg-danger @endif" style="width: {{ $t[0]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[0]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[0]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[0]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[0]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تحديد القيم المؤسسية ونشر ثقافة التميّز بما يعبر عن قيم التميز، والإنجاز، والعمل بروح
@@ -64,8 +64,8 @@
                             <div class="progress-bar @if ($t[1]->percentage == 100) bg-success @endif @if ($t[1]->percentage < 50) bg-danger @endif" style="width: {{ $t[1]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[1]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[1]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[1]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[1]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق برامج ومبادرات لترسيخ الثقافة المؤسسية بين الموظفين ودعم الصورة الإيجابية للموظفين</td>
@@ -74,8 +74,8 @@
                             <div class="progress-bar @if ($t[2]->percentage == 100) bg-success @endif @if ($t[2]->percentage < 50) bg-danger @endif" style="width: {{ $t[2]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[2]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[2]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[2]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[2]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نشر وتعزيز ثقافة إدارة التغيير والابتكار وإدارة المعرفة والتعلم المؤسسي</td>
@@ -84,8 +84,8 @@
                             <div class="progress-bar @if ($t[3]->percentage == 100) bg-success @endif @if ($t[3]->percentage < 50) bg-danger @endif" style="width: {{ $t[3]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[3]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[3]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[3]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[3]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق برامج ومبادرات لتمكين وتأهيل الموظفين للمواقع القيادية وبناء نماذج قيادية تكون قدوة
@@ -95,8 +95,8 @@
                             <div class="progress-bar @if ($t[4]->percentage == 100) bg-success @endif @if ($t[4]->percentage < 50) bg-danger @endif" style="width: {{ $t[4]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[4]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[4]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[4]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[4]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="12">نتائج الثقافة المؤسسية</td>
@@ -107,8 +107,8 @@
                             <div class="progress-bar @if ($t[5]->percentage == 100) bg-success @endif @if ($t[5]->percentage < 50) bg-danger @endif" style="width: {{ $t[5]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[5]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[5]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[5]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[5]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات ترسيخ الثقافة المؤسسية</td>
@@ -117,8 +117,8 @@
                             <div class="progress-bar @if ($t[6]->percentage == 100) bg-success @endif @if ($t[6]->percentage < 50) bg-danger @endif" style="width: {{ $t[6]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[6]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[6]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[6]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[6]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى التزام الموظفين بالقيم المؤسسية</td>
@@ -127,8 +127,8 @@
                             <div class="progress-bar @if ($t[7]->percentage == 100) bg-success @endif @if ($t[7]->percentage < 50) bg-danger @endif" style="width: {{ $t[7]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[7]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[7]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[7]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[7]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات تأهيل الموظفين للمواقع القيادية</td>
@@ -137,8 +137,8 @@
                             <div class="progress-bar @if ($t[8]->percentage == 100) bg-success @endif @if ($t[8]->percentage < 50) bg-danger @endif" style="width: {{ $t[8]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[8]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[8]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[8]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[8]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات عن مستوى دمج النوع الاجتماعي</td>
@@ -147,8 +147,8 @@
                             <div class="progress-bar @if ($t[9]->percentage == 100) bg-success @endif @if ($t[9]->percentage < 50) bg-danger @endif" style="width: {{ $t[9]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[9]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[9]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[9]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[9]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات توفير بيئة ممكنة في العمل</td>
@@ -157,8 +157,8 @@
                             <div class="progress-bar @if ($t[10]->percentage == 100) bg-success @endif @if ($t[10]->percentage < 50) bg-danger @endif" style="width: {{ $t[10]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[10]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[10]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[10]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[10]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="6">مقاييس الرأي</td>
@@ -168,8 +168,8 @@
                             <div class="progress-bar @if ($t[11]->percentage == 100) bg-success @endif @if ($t[11]->percentage < 50) bg-danger @endif" style="width: {{ $t[11]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[11]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[11]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[11]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[11]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• ترسيخ الثقافة المؤسسية</td>
@@ -178,8 +178,8 @@
                             <div class="progress-bar @if ($t[12]->percentage == 100) bg-success @endif @if ($t[12]->percentage < 50) bg-danger @endif" style="width: {{ $t[12]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[12]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[12]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[12]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[12]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى التزام القيادة في وزارة الشباب بالقيم المؤسسية</td>
@@ -188,8 +188,8 @@
                             <div class="progress-bar @if ($t[13]->percentage == 100) bg-success @endif @if ($t[13]->percentage < 50) bg-danger @endif" style="width: {{ $t[13]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[13]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[13]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[13]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[13]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى التزام الموظفين بالقيم المؤسسية</td>
@@ -198,8 +198,8 @@
                             <div class="progress-bar @if ($t[14]->percentage == 100) bg-success @endif @if ($t[14]->percentage < 50) bg-danger @endif" style="width: {{ $t[14]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[14]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[14]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[14]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[14]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى أداء الفريق القيادي وتأهيل الصف الثاني</td>
@@ -208,8 +208,8 @@
                             <div class="progress-bar @if ($t[15]->percentage == 100) bg-success @endif @if ($t[15]->percentage < 50) bg-danger @endif" style="width: {{ $t[15]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[15]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[15]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[15]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[15]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى توفير بيئة ممكنة في العمل</td>
@@ -218,8 +218,8 @@
                             <div class="progress-bar @if ($t[16]->percentage == 100) bg-success @endif @if ($t[16]->percentage < 50) bg-danger @endif" style="width: {{ $t[16]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[16]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[16]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[16]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[16]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <th rowspan="16">الاتصال واشراك المعنيين</th>
@@ -232,8 +232,8 @@
                             <div class="progress-bar @if ($t[17]->percentage == 100) bg-success @endif @if ($t[17]->percentage < 50) bg-danger @endif" style="width: {{ $t[17]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[17]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[17]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[17]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[17]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• إيجاد وتفعيل قنوات إتصال حديثة وفعالة ومباشرة ومنتظمة ممتنوعة مع جميع المعنيين</td>
@@ -242,8 +242,8 @@
                             <div class="progress-bar @if ($t[18]->percentage == 100) bg-success @endif @if ($t[18]->percentage < 50) bg-danger @endif" style="width: {{ $t[18]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[18]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[18]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[18]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[18]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطوير خطة الإتصال المؤسسي وخطة الاتصال في الطوارئ والأزمات</td>
@@ -252,8 +252,8 @@
                             <div class="progress-bar @if ($t[19]->percentage == 100) bg-success @endif @if ($t[19]->percentage < 50) bg-danger @endif" style="width: {{ $t[19]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[19]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[19]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[19]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[19]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نشر الروح الايجابية بتطوير خطة لترويج الانجازات على مستوى وزارة الشباب</td>
@@ -262,8 +262,8 @@
                             <div class="progress-bar @if ($t[20]->percentage == 100) bg-success @endif @if ($t[20]->percentage < 50) bg-danger @endif" style="width: {{ $t[20]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[20]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[20]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[20]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[20]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطوير قنوات لتقديم الشكاوى والإقتراحات من قبل المعنيين</td>
@@ -272,8 +272,8 @@
                             <div class="progress-bar @if ($t[21]->percentage == 100) bg-success @endif @if ($t[21]->percentage < 50) bg-danger @endif" style="width: {{ $t[21]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[21]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[21]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[21]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[21]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• إستخدام مواقع التواصل الاجتماعي في وزارة الشباب</td>
@@ -282,8 +282,8 @@
                             <div class="progress-bar @if ($t[22]->percentage == 100) bg-success @endif @if ($t[22]->percentage < 50) bg-danger @endif" style="width: {{ $t[22]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[22]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[22]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[22]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[22]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="10">نتائج الاتصال واشراك المعنيين</td>
@@ -294,8 +294,8 @@
                             <div class="progress-bar @if ($t[23]->percentage == 100) bg-success @endif @if ($t[23]->percentage < 50) bg-danger @endif" style="width: {{ $t[23]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[23]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[23]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[23]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[23]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات أدوات الإتصال الداخلية والخارجية</td>
@@ -304,8 +304,8 @@
                             <div class="progress-bar @if ($t[24]->percentage == 100) bg-success @endif @if ($t[24]->percentage < 50) bg-danger @endif" style="width: {{ $t[24]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[24]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[24]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[24]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[24]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات الترويج الفعال لإنجازات الجهات</td>
@@ -314,8 +314,8 @@
                             <div class="progress-bar @if ($t[25]->percentage == 100) bg-success @endif @if ($t[25]->percentage < 50) bg-danger @endif" style="width: {{ $t[25]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[25]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[25]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[25]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[25]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات التواصل مع كافة المعنيين</td>
@@ -324,8 +324,8 @@
                             <div class="progress-bar @if ($t[26]->percentage == 100) bg-success @endif @if ($t[26]->percentage < 50) bg-danger @endif" style="width: {{ $t[26]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[26]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[26]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[26]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[26]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مؤشرات تفاعل وزارة الشباب مع المواطنين</td>
@@ -334,8 +334,8 @@
                             <div class="progress-bar @if ($t[27]->percentage == 100) bg-success @endif @if ($t[27]->percentage < 50) bg-danger @endif" style="width: {{ $t[27]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[27]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[27]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[27]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[27]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام قنوات التواصل الاجتماعي</td>
@@ -344,8 +344,8 @@
                             <div class="progress-bar @if ($t[28]->percentage == 100) bg-success @endif @if ($t[28]->percentage < 50) bg-danger @endif" style="width: {{ $t[28]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[28]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[28]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[28]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[28]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[28]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[28]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="4">مقاييس الرأي</td>
@@ -355,8 +355,8 @@
                             <div class="progress-bar @if ($t[29]->percentage == 100) bg-success @endif @if ($t[29]->percentage < 50) bg-danger @endif" style="width: {{ $t[29]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[29]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[29]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[29]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[29]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[29]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[29]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• قياس رأي المعنيين على الشكاوى والإقتراحات المقدمة</td>
@@ -365,8 +365,8 @@
                             <div class="progress-bar @if ($t[30]->percentage == 100) bg-success @endif @if ($t[30]->percentage < 50) bg-danger @endif" style="width: {{ $t[30]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[30]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[30]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[30]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[30]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[30]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[30]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• فعّالية التواصل الداخلي والخارجي</td>
@@ -375,8 +375,8 @@
                             <div class="progress-bar @if ($t[31]->percentage == 100) bg-success @endif @if ($t[31]->percentage < 50) bg-danger @endif" style="width: {{ $t[31]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[31]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[31]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[31]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[31]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[31]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[31]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• جدوى استخدام قنوات التواصل الاجتماعي</td>
@@ -385,8 +385,8 @@
                             <div class="progress-bar @if ($t[32]->percentage == 100) bg-success @endif @if ($t[32]->percentage < 50) bg-danger @endif" style="width: {{ $t[32]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[32]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[32]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[32]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[32]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[32]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[32]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <th rowspan="21">الحوكمة وادارة الأداء</th>
@@ -398,8 +398,8 @@
                             <div class="progress-bar @if ($t[33]->percentage == 100) bg-success @endif @if ($t[33]->percentage < 50) bg-danger @endif" style="width: {{ $t[33]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[33]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[33]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[33]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[33]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[33]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[33]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق معايير النزاهة الوطنية والشفافية في القطاع العام وفق الدليل الوطني المعتمد للحوكمة</td>
@@ -408,8 +408,8 @@
                             <div class="progress-bar @if ($t[34]->percentage == 100) bg-success @endif @if ($t[34]->percentage < 50) bg-danger @endif" style="width: {{ $t[34]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[34]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[34]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[34]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[34]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[34]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[34]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• الالتزام بمتطلبات أجهزة المتابعة والرقابة الإدارية والمالية الحكومية</td>
@@ -418,8 +418,8 @@
                             <div class="progress-bar @if ($t[35]->percentage == 100) bg-success @endif @if ($t[35]->percentage < 50) bg-danger @endif" style="width: {{ $t[35]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[35]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[35]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[35]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[35]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[35]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[35]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام الانظمة التقنية في حوكمة اجراءات وزارة الشباب</td>
@@ -428,8 +428,8 @@
                             <div class="progress-bar @if ($t[36]->percentage == 100) bg-success @endif @if ($t[36]->percentage < 50) bg-danger @endif" style="width: {{ $t[36]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[36]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[36]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[36]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[36]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[36]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[36]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق مدونة السلوك الوظيفي الحكومي ومعايير اخلاقيات العمل المهني</td>
@@ -438,8 +438,8 @@
                             <div class="progress-bar @if ($t[37]->percentage == 100) bg-success @endif @if ($t[37]->percentage < 50) bg-danger @endif" style="width: {{ $t[37]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[37]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[37]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[37]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[37]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[37]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[37]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تطبيق نظام إدارة الأداء المؤسسي وتحديد المسؤوليات والصلاحيات لتطبيقه</td>
@@ -448,8 +448,8 @@
                             <div class="progress-bar @if ($t[38]->percentage == 100) bg-success @endif @if ($t[38]->percentage < 50) bg-danger @endif" style="width: {{ $t[38]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[38]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[38]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[38]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[38]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[38]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[38]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• تصميم آليات وأنظمة لجمع وتحليل والتدقيق على بيانات الأداء ورفع التقارير للمعنيين بدورية منتظمة
@@ -459,8 +459,8 @@
                             <div class="progress-bar @if ($t[39]->percentage == 100) bg-success @endif @if ($t[39]->percentage < 50) bg-danger @endif" style="width: {{ $t[39]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[39]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[39]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[39]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[39]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[39]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[39]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• متابعة جمع بيانات مؤشرات الأداء التي يتم على أساسها قياس أداء وزارة الشباب</td>
@@ -469,8 +469,8 @@
                             <div class="progress-bar @if ($t[40]->percentage == 100) bg-success @endif @if ($t[40]->percentage < 50) bg-danger @endif" style="width: {{ $t[40]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[40]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[40]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[40]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[40]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[40]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[40]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• استخدام تقارير نظام إدارة الأداء المؤسسي في المراجعة الدورية للاستراتيجيات والمؤشرات</td>
@@ -479,8 +479,8 @@
                             <div class="progress-bar @if ($t[41]->percentage == 100) bg-success @endif @if ($t[41]->percentage < 50) bg-danger @endif" style="width: {{ $t[41]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[41]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[41]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[41]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[41]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[41]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[41]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• التنسيق مع رئاسة الوزراء بخصوص رصد الأداء المؤسسي ومشاركة المعلومات اللازمة مع الجهات المعنية
@@ -490,8 +490,8 @@
                             <div class="progress-bar @if ($t[42]->percentage == 100) bg-success @endif @if ($t[42]->percentage < 50) bg-danger @endif" style="width: {{ $t[42]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[42]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[42]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[42]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[42]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[42]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[42]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="11">نتائج الحوكمة وادارة الأداء</td>
@@ -502,8 +502,8 @@
                             <div class="progress-bar @if ($t[43]->percentage == 100) bg-success @endif @if ($t[43]->percentage < 50) bg-danger @endif" style="width: {{ $t[43]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[43]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[43]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[43]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[43]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[43]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[43]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج تطبيق نظام الحوكمة</td>
@@ -512,8 +512,8 @@
                             <div class="progress-bar @if ($t[44]->percentage == 100) bg-success @endif @if ($t[44]->percentage < 50) bg-danger @endif" style="width: {{ $t[44]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[44]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[44]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[44]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[44]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[44]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[44]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج نشاطات التوعية والتعاميم حول الحوكمة</td>
@@ -522,8 +522,8 @@
                             <div class="progress-bar @if ($t[45]->percentage == 100) bg-success @endif @if ($t[45]->percentage < 50) bg-danger @endif" style="width: {{ $t[45]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[45]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[45]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[45]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[45]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[45]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[45]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نسبة الالتزام بمدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
@@ -532,8 +532,8 @@
                             <div class="progress-bar @if ($t[46]->percentage == 100) bg-success @endif @if ($t[46]->percentage < 50) bg-danger @endif" style="width: {{ $t[46]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[46]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[46]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[46]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[46]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[46]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[46]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• فعالية المساءلة والمحاسبة</td>
@@ -542,8 +542,8 @@
                             <div class="progress-bar @if ($t[47]->percentage == 100) bg-success @endif @if ($t[47]->percentage < 50) bg-danger @endif" style="width: {{ $t[47]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[47]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[47]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[47]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[47]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[47]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[47]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج كفاءة وفعالية نظام إدارة الأداء المؤسسي (دقة جمع وتحليل والتدقيق على بيانات الأداء ورفع
@@ -553,8 +553,8 @@
                             <div class="progress-bar @if ($t[48]->percentage == 100) bg-success @endif @if ($t[48]->percentage < 50) bg-danger @endif" style="width: {{ $t[48]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[48]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[48]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[48]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[48]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[48]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[48]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج استخدام تقارير نظام إدارة الأداء المؤسسي في التطوير والتحسين</td>
@@ -563,8 +563,8 @@
                             <div class="progress-bar @if ($t[49]->percentage == 100) bg-success @endif @if ($t[49]->percentage < 50) bg-danger @endif" style="width: {{ $t[49]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[49]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[49]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[49]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[49]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[49]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[49]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مستوى التنسيق مع رئاسة الوزراء بخصوص إدارة الأداء المؤسسي</td>
@@ -573,8 +573,8 @@
                             <div class="progress-bar @if ($t[50]->percentage == 100) bg-success @endif @if ($t[50]->percentage < 50) bg-danger @endif" style="width: {{ $t[50]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[50]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[50]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[50]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[50]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[50]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[50]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• نتائج الاستفادة من تقارير المشاركة بجوائز التميز</td>
@@ -583,8 +583,8 @@
                             <div class="progress-bar @if ($t[51]->percentage == 100) bg-success @endif @if ($t[51]->percentage < 50) bg-danger @endif" style="width: {{ $t[51]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[51]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[51]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[51]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[51]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[51]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[51]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td rowspan="2">مقاييس الرأي</td>
@@ -594,8 +594,8 @@
                             <div class="progress-bar @if ($t[52]->percentage == 100) bg-success @endif @if ($t[52]->percentage < 50) bg-danger @endif" style="width: {{ $t[52]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[52]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[52]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[52]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[52]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[52]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[52]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
                 <tr>
                     <td>• مدى توفير وزارة الشباب ومشاركتها للمعلومات اللازمة حول الأداء المؤسسي (منهم رئاسة الوزراء)
@@ -605,8 +605,8 @@
                             <div class="progress-bar @if ($t[53]->percentage == 100) bg-success @endif @if ($t[53]->percentage < 50) bg-danger @endif" style="width: {{ $t[53]->percentage }}%"></div>
                         </div>
                     </td>
-                    <td><a class="btn btn-success" href="{{ route('notes.index', ['task' => $t[53]->id]) }}">ملاحظات</a></td>
-                    <td><a class="btn btn-success" href="{{ route('attachments.index', ['task' => $t[53]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
+                    <td><a class="btn @if (count($t[53]->notes)) btn-success @else btn-primary @endif" href="{{ route('notes.index', ['task' => $t[53]->id]) }}">ملاحظات</a></td>
+                    <td><a class="btn @if (count($t[53]->attachments)) btn-success @else btn-primary @endif" href="{{ route('attachments.index', ['task' => $t[53]->id]) }}"><i class="fa-solid fa-paperclip"></i></a></td>
                 </tr>
             </tbody>
         </table>
