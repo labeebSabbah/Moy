@@ -49,7 +49,7 @@
 
                 <th style="width: 20%">تاريخ النشر</th>
 
-                <th style="width: 10%">تحميل</th>
+                <th style="width: 10%">مشاهدة</th>
 
             </tr>
 
@@ -66,8 +66,8 @@
 
                     <td>
 
-                        <a href="{{ url($attachment->path) }}" class="btn btn-primary" download><i
-                                class="fa-solid fa-download"></i></a>
+                        <a href="{{ url($attachment->path) }}" class="btn btn-primary" target="_blank"><i
+                                class="fa-solid fa-eye"></i></a>
 
                     </td>
 
